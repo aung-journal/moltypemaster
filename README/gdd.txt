@@ -1,0 +1,59 @@
+Cover: logo.png
+Title: MolType Master
+Version: 0.1
+Coded by Aung-journal studio
+licensed under Creative Commons CC Zero License
+Overview: I will use assets from https://dreammix.itch.io/keyboard-keys-for-ui, https://opengameart.org/content/bubbles-1
+I use sounds from https://pixabay.com/sound-effects/keyboard-153960/ and src7 from GD50
+I use flipps.otf font as my main font
+Solo
+I will just use text editor and github as vcs(version control system)
+
+UPS: highest score for WPM and amount of words typed, amount of levels, (the actual one is the score)
+used procedural generation to get levels(and also save the levels)
+Genre: Educational typing game
+Platform: Android, Windows, MacOs, linux(debian)
+Story: none
+controls: start typing and clicked return or enter to finish the game
+Camera: locked and bubbles will start to drop
+
+Achievments:
+
+            High Level Player Inteface
+I will have gold on the top-left corner
+Amount of words typed
+
+Start Screen:
+Play, Instructions, Settings, HighScores(WPM), Achievements
+
+Setting State:
+Audio volume, sound effects, music
+
+Loading State:
+I will display my logo known as beginGameState
+
+        Game Overview
+This game has a molecule in goal, you have to type the element needed to make that molecule (and there will be timer and the score) and there is the heart and
+there are three levels
+        
+Interactive Items:
+
+    Auto-Complete: This power-up automatically fills in the next few letters of the word for the player, allowing them to type more quickly.
+
+    --Word Prediction: Displays a list of possible next words, making it easier for the player to select and complete the current sentence.
+
+    --Shuffle Letters: Randomly shuffles the letters of the current word, challenging the player to unscramble and type the correct word.
+
+    Bonus Points: Grants additional points for each correctly typed word while the power-up is active.
+
+    Invincibility: Makes the player immune to typing errors and penalties for a limited time, allowing them to make mistakes without consequences.
+
+    Word Eraser: Allows the player to eliminate a word from the current sentence, giving them more room to focus on the remaining words.
+
+    --Word Highlighter: Highlights the next word to be typed, drawing the player's attention to it.
+
+    --Stealth Mode: Temporarily hides the on-screen keyboard or the next word to be typed, challenging the player's memory and typing skills.
+
+    Multiplier: Multiplies the point value of each correctly typed word for a set duration.
+
+    --Combo Extender: Extends the time duration or number of consecutive words needed to maintain a typing combo.
