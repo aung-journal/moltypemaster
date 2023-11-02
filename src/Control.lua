@@ -35,15 +35,23 @@ function Control:update(dt)
         end
     end
 
-    if gStateMachine:getCurrentStateName() ~= 'start' and gStateMachine:getCurrentStateName() ~= 'begin-game' then
-        if love.keyboard.wasPressed('p') then
+    notPause = {'start', 'begin-game', 'play'}
+
+    if love.keyboard.wasPressed('p') then
+        local currentState = gStateMachine:getCurrentStateName()
+        local isNotPauseState = false
+    
+        for k, state in pairs(notPause) do
+            if currentState == state then
+                isNotPauseState = true
+                break
+            end
+        end
+    
+        if not isNotPauseState then
             gStateMachine:change('pause', {
-                state = gStateMachine:getCurrentStateName()
+                state = currentState
             })
         end
-    end
-end
-
-function Control:update()
-    
+    end    
 end

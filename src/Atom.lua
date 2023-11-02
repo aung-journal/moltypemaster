@@ -16,7 +16,7 @@ function Atom:init(world, sprite, atom, color, x, y, userData)
     self.color = color
 
     self.fixture = love.physics.newFixture(self.body, self.shape)
-    self.userData = userData or 'start'
+    self.userData = userData or 'Atom'
 
     self.fixture:setUserData(userData)
 

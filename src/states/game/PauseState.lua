@@ -29,8 +29,7 @@ function PauseState:update(dt)
 
     if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
         if highlighted == 1 then
-            gStateMachine:change('start', {
-            })
+            gStateMachine:change('start')
         elseif highlighted == 2 then
             gStateMachine:change(tostring(self.previousState))
         elseif highlighted == 3 then

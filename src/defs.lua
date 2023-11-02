@@ -122,8 +122,8 @@ ATOM_DEFS = {
 LEVEL_DEFS = {
     ['easy'] = {
         {
-            yGravity = 10,
-            
+            yGravity = 50,
+            atomNumber = 5
         }
     }
 }

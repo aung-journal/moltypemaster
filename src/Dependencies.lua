@@ -14,6 +14,7 @@ require 'src/constants'
 --classes for things in playState
 require 'src/Atom'
 require 'src/Background'
+require 'src/Level'
 
 --defs
 require 'src/defs'
@@ -69,6 +70,11 @@ gFrames = {
 gSounds = {
     ['music'] = love.audio.newSource('sounds/music.mp3', 'stream'),
 
+    ['break1'] = love.audio.newSource('sounds/break1.wav', 'static'),
+    ['break2'] = love.audio.newSource('sounds/break2.wav', 'static'),
+    ['break3'] = love.audio.newSource('sounds/break3.mp3', 'static'),
+    ['break4'] = love.audio.newSource('sounds/break4.wav', 'static'),
+    ['break5'] = love.audio.newSource('sounds/break5.wav', 'static'),
     ['selection'] = love.audio.newSource('sounds/selection.wav', 'static'),
     ['turn'] = love.audio.newSource('sounds/turn.mp3', 'static'),
     ['typed'] = love.audio.newSource('sounds/typed.mp3', 'static'),
